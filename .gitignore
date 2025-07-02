@@ -23,6 +23,14 @@
 !setup.cfg
 !cfg/yolov3*.cfg
 
+# Exceções para imagens de exemplo
+!resultSamples/*.jpg
+!resultSamples/*.jpeg
+!resultSamples/*.png
+!resultSamples/*.JPG
+!resultSamples/*.JPEG
+!resultSamples/*.PNG
+
 storage.googleapis.com
 runs/*
 data/*
