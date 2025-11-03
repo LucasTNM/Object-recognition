@@ -1,6 +1,6 @@
 # 🔍 Detecção de Objetos com YOLOv5
 
-Este repositório contém um projeto de detecção de objetos utilizando o framework [YOLOv5](https://github.com/ultralytics/yolov5), com um modelo **já treinado** e pronto para realizar inferência em novas imagens.  
+Este repositório contém um projeto de detecção de objetos utilizando o framework [YOLOv5](https://github.com/ultralytics/yolov5), com um modelo **já treinado** e pronto para realizar inferência em novas imagens.
 
 O projeto foi desenvolvido como parte da disciplina de **Inteligência Computacional** no IFB.
 
@@ -17,6 +17,7 @@ O projeto foi desenvolvido como parte da disciplina de **Inteligência Computaci
 ---
 
 ## 📁 Estrutura do Projeto
+
 yolov5/
 ├── data/
 │ ├── images/train/ # Imagens usadas no treinamento e teste
@@ -38,7 +39,7 @@ yolov5/
 - PIL, pandas, matplotlib
 - Placa NVIDIA (opcional)
 
-Instale as dependências com:
+Install as dependências com:
 
 ```bash
 pip install -r requirements.txt
@@ -51,7 +52,7 @@ python detect.py --weights runs/train/exp/weights/best.pt --source data/images/t
 🔄 Parâmetros úteis:
 Parâmetro	Descrição
 --weights	Caminho para os pesos do modelo treinado
---source	Pasta ou imagem a ser analisada (.jpg, .mp4, etc.)
+--source	Pasta ou imagem a set analisada (.jpg, .mp4, etc.)
 --conf	Nível mínimo de confiança (ex: 0.4)
 --device	Use cpu ou 0 para GPU NVIDIA (se disponível)
 
@@ -63,13 +64,14 @@ runs/detect/exp/
 Você encontrará as imagens com as caixas de detecção desenhadas ao redor dos objetos.
 
 📌 Extras
-O modelo foi treinado com 30 épocas, mas pode ser ajustado facilmente com o parâmetro --epochs.
+O modelo foi treinado com 30 épocas, mas pode set ajustado facilmente com o parâmetro --epochs.
 
 O script de conversão de CSV para YOLO format está disponível em outro branch/opcional.
 
-A estrutura de diretórios segue o padrão oficial do YOLOv5 para facilitar reuso e expansão.
+A estrutura de diretórios segue o padrão official do YOLOv5 para facilitar reuso e expansão.
 
-👨‍💻 Autor
+👨‍💻 Author
 Lucas Tony
 Ciência da Computação – IFB - Campus Taguatinga
 Projeto acadêmico – Inteligência Computacional
+```
